@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "spatial-ux-dance",
+    "title": "Spatial UX",
+    "description": "Dance tutorial app",
+    "tags": ["UX/UI", "App Design"]
+  },
+  {
+    "slug": "capstone-project",
+    "title": "Capstone Project",
+    "description": "Still work in progress",
+    "tags": ["Research", "Ongoing"]
+  },
+  {
+    "slug": "senses-new-york",
+    "title": "The Senses of New York",
+    "description": "A physical computation project",
+    "tags": ["Physical Computing", "Installation"]
+  },
+  {
+    "slug": "generative-design",
+    "title": "Generative Design",
+    "description": "A software prototype to simplify the regulation envelope mapping for NYC",
+    "tags": ["Software", "Generative"]
+  },
+  {
+    "slug": "ui-ux-project",
+    "title": "UI/UX Project",
+    "description": "Interface and experience design",
+    "tags": ["UI/UX", "Design"]
+  },
+  {
+    "slug": "data-science-project",
+    "title": "Data Science Project",
+    "description": "Data analysis and visualization",
+    "tags": ["Data Science", "Analytics"]
+  },
+  {
+    "slug": "xr-prototyping",
+    "title": "XR Prototyping",
+    "description": "Extended reality prototype exploration",
+    "tags": ["XR", "Emerging Tech"]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "The Stack (Benjamin Bratton)",
+    "source": "Book",
+    "url": "https://mitpress.mit.edu/9780262529970/the-stack/",
+    "reason": "Framework for layered planetary-scale computation and governance.",
+    "related": [
+      "layered-internet-world"
+    ]
+  },
+  {
+    "title": "YOLOv8 Docs",
+    "source": "Ultralytics",
+    "url": "https://docs.ultralytics.com/",
+    "reason": "Baseline for the webcam object-recognition probe.",
+    "related": [
+      "safespace-xr-probe"
+    ]
+  }
+]
