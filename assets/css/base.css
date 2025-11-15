@@ -86,6 +86,81 @@ nav a:hover {
   opacity: 1;
 }
 
+.ideas-section {
+  /* center the ideas section and expand to fill main content width */
+  max-width: 900px; /* match main's max-width so it spans both ends */
+  width: 100%;
+  margin: 0 auto; /* center horizontally */
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+.ideas-section-inner { padding: 0; }
+.ideas-section h2 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ideas-list {
+  margin-top: 8px;
+}
+.idea-form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.idea-form label { display: block; }
+.idea-form input[type="text"],
+.idea-form textarea,
+.idea-form input[type="file"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 13px;
+}
+.label-text { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.label-inline { display: flex; flex-direction: column; }
+.idea-image-preview img { max-width:100%; display:block; margin-top:6px; border-radius:4px; }
+.idea-form-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:6px }
+.idea-form-actions .muted { background:transparent; border:1px solid var(--border); padding:8px 10px }
+
+.idea-item { display:flex; gap:10px; align-items:flex-start; }
+.idea-item .idea-body { flex:1 }
+.idea-item img.idea-thumb { width:80px; height:80px; object-fit:cover; border-radius:4px }
+.idea-meta { font-size:12px; color:var(--muted); margin-top:6px }
+.idea-actions { display:flex; gap:6px; align-items:flex-start }
+.idea-actions button { padding:6px 8px; font-size:12px; cursor:pointer }
+
+/* separator between posted ideas */
+.ideas-list .idea-item { padding: 14px 6px; font-size: 13px; position: relative; margin-bottom: 12px; }
+.ideas-list .idea-item:last-child { margin-bottom: 0; }
+
+/* stronger visible separator line across the full item */
+.ideas-list .idea-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #dcdcdc; /* more visible than var(--border) */
+}
+.idea-title { font-weight: 600; display:block; }
+.idea-note { color: var(--muted); font-size: 12px; }
+
+/* Rich editor styling for contenteditable note */
+.idea-editor {
+  min-height: 260px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  font-size: 13px;
+  line-height: 1.4;
+  background: transparent;
+  outline: none;
+  white-space: pre-wrap;
+}
+.idea-editor img { max-width: 100%; height: auto; display: block; margin-top: 8px; }
+
 /* Main Content */
 main {
   max-width: 900px;
@@ -316,6 +391,16 @@ main {
     flex-direction: column;
     gap: 16px;
     padding: 16px 20px;
+  }
+
+  /* mobile: ideas section becomes full width below header */
+  .ideas-section {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 18px 12px;
   }
 
   nav {

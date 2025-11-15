@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ideas — Varadraj Borde</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-title">
+      <h1>Varadraj Borde</h1>
+      <p class="subtitle">Design technologist, Architect.</p>
+    </a>
+    <nav>
+      <a href="work.html">Work</a>
+      <a href="existing-portfolio.html">Existing Portfolio</a>
+      <a href="#ideas" id="ideas-link">Ideas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="ideas" class="ideas-section">
+      <div class="ideas-section-inner">
+        <h2>Ideas</h2>
+
+        <!-- Create idea form -->
+        <form id="idea-form" class="idea-form">
+          <label>
+            <div class="label-text">Title</div>
+            <input id="idea-title" name="title" type="text" placeholder="Short title" required />
+          </label>
+
+          <label>
+            <div class="label-text">Note</div>
+            <!-- contenteditable rich note area - supports pasted images and inline links -->
+            <div id="idea-note" name="note" class="idea-editor" contenteditable="true" aria-label="Idea note">Describe the idea</div>
+          </label>
+
+          <div class="idea-form-actions">
+            <button id="idea-submit" type="submit">Post idea</button>
+            <button id="idea-clear" type="button" class="muted">Clear</button>
+          </div>
+        </form>
+
+        <div id="ideas-list" class="ideas-list">Loading…</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="contact-info">
+      <span>+1 (646) 2100 137</span>
+      <span>vvb2112@columbia.edu</span>
+      <span>varadraj.borde.com</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
